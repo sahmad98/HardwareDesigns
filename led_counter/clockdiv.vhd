@@ -1,12 +1,12 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Saleem Ahmad 
 -- 
 -- Create Date:    20:29:28 04/01/2018 
--- Design Name: 
+-- Design Name: Clock Divider
 -- Module Name:    clockdiv - Behavioral 
 -- Project Name: 
--- Target Devices: 
+-- Target Devices: Any VHDL supported FPGA
 -- Tool versions: 
 -- Description: 
 --
