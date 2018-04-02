@@ -1,0 +1,17 @@
+NET "clk" LOC = P126;
+TIMESPEC TS_CLK = PERIOD "clk" 100 MHz HIGH 50%;
+
+#NET "d" LOC = P124 | PULLUP;
+NET "count" LOC = P124 | PULLUP;
+#NET "enable" LOC = P123 | PULLUP;
+#NET "reset" LOC = P121 | PULLUP;
+#NET "q" LOC = P119 | PULLDOWN;
+
+NET "led[0]" LOC = P119 | PULLDOWN;
+NET "led[1]" LOC = P118 | PULLDOWN;
+NET "led[2]" LOC = P117 | PULLDOWN;
+NET "led[3]" LOC = P116 | PULLDOWN;
+NET "led[4]" LOC = P115 | PULLDOWN;
+NET "led[5]" LOC = P114 | PULLDOWN;
+NET "led[6]" LOC = P112 | PULLDOWN;
+NET "led[7]" LOC = P111 | PULLDOWN;
