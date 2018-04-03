@@ -1,0 +1,33 @@
+NET "clk" LOC = P126;
+TIMESPEC TS_CLK = PERIOD "clk" 100 MHz HIGH 50%;
+
+#NET "d" LOC = P124 | PULLUP;
+#NET "count" LOC = P124 | PULLUP;
+#NET "enable" LOC = P123 | PULLUP;
+#NET "reset" LOC = P121 | PULLUP;
+#NET "q" LOC = P119 | PULLDOWN;
+
+#NET "led[0]" LOC = P119 | PULLDOWN;
+#NET "led[1]" LOC = P118 | PULLDOWN;
+#NET "led[2]" LOC = P117 | PULLDOWN;
+#NET "led[3]" LOC = P116 | PULLDOWN;
+#NET "led[4]" LOC = P115 | PULLDOWN;
+#NET "led[5]" LOC = P114 | PULLDOWN;
+#NET "led[6]" LOC = P112 | PULLDOWN;
+#NET "led[7]" LOC = P111 | PULLDOWN;
+
+NET "leds[7]"                  LOC = P7       | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L51N_3           	        Sch = GPIO-N8
+#NET "IO_P1[25]"                  LOC = P6       | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L52P_3	   		            Sch = GPIO-P7 
+NET "leds[6]"                  LOC = P5     	 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L52N_3          		    Sch = GPIO-N7
+#NET "IO_P1[27]"                  LOC = P2       | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L83P_3	  		            Sch = GPIO-P6
+NET "leds[5]"                  LOC = P1	     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L83N_VREF_3     		    Sch = GPIO-N6
+#NET "IO_P1[29]"                  LOC = P142     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L2P_0	   		            Sch = GPIO-P5
+NET "leds[4]"                  LOC = P141     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L2N_0           		    Sch = GPIO-N5
+#NET "IO_P1[31]"                  LOC = P140     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L3P_0	   		            Sch = GPIO-P4
+NET "leds[3]"                  LOC = P139     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L3N_0 	   		            Sch = GPIO-N4
+#NET "IO_P1[33]"                  LOC = P138     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L4P_0	   		            Sch = GPIO-P3
+NET "leds[2]"                  LOC = P137     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L4N_0   	   		        Sch = GPIO-N3
+#NET "IO_P1[35]"                  LOC = P134     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L34P_GCLK19_0  	        Sch = GPIO-P2
+NET "leds[1]"                  LOC = P133     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L34N_GCLK18_0   		    Sch = GPIO-N2
+#NET "IO_P1[37]"                  LOC = P132     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L35P_GCLK17_0   	        Sch = GPIO-P1
+NET "leds[0]"                  LOC = P131     | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L35N_GCLK16_0    	        Sch = GPIO-N1
